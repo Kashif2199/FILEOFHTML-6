@@ -1,0 +1,16 @@
+
+tbody tr:nth-child(3n) td {
+    font-weight: bold;
+    color: green;
+}
+
+
+tbody tr:nth-child(4n + 1) td {
+    font-style: italic;
+    font-size: 30px;
+}
+
+
+tbody tr:last-child {
+    background-color: yellow;
+}
