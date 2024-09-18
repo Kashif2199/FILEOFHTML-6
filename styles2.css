@@ -1,0 +1,54 @@
+/* General styles for the body */
+body {
+    background-color: black;
+    color: #FF00FF;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Container for the cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* General card styling */
+.card {
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+/* Card colors */
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: violet;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+/* Hover effect: when hovering on one card, others fade */
+.card:hover {
+    opacity: 1;
+}
+
+.card:hover ~ .card,
+.container .card:not(:hover) {
+    opacity: 0.5;
+}
